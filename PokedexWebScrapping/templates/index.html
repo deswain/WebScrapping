@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="content" style="text-align:center;">
+
+    <div class="form" style="text-align: center; margin-top:50%">
+            <h1 style="text-align: center">Search Pokemon</h1>
+        <form action="/review" method="POST" style="text-align: center;">
+            <input type="text" name="content" id="content" style="width:100%;height:30px">
+            <br/>
+            <br/>
+            <input type="submit" value="Search" style="height:50px;width:100px;background-color:#001993;color:#FFFFFF;
+font-size:20px;font-weight:'bold';border-radius:10px;border-color:#000000;horizontal-alignment:center">
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
